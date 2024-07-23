@@ -3,15 +3,16 @@ primes = []
 not_primes = []
 
 for n in numbers:
-    is_primes = True
-    for i in range(2, n):
-        if n % i == 0:
-            is_primes = False
-            break
-    if is_primes == False:
-        not_primes.append(n)
-    if is_primes == True and n != 1:
-        primes.append(n)
+    if n != 1:
+        is_primes = True
+        for i in range(2, n):
+            if n % i == 0:
+                is_primes = False
+                break
+        if is_primes == False:
+            not_primes.append(n)
+        if is_primes == True:
+            primes.append(n)
 
 print('Простые:', primes)
 print('НЕ Простые:', not_primes)
