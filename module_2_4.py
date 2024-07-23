@@ -14,5 +14,5 @@ for n in numbers:
         if is_primes == True:
             primes.append(n)
 
-print('Простые:', primes)
-print('НЕ Простые:', not_primes)
+print('primes:', primes)
+print('not_primes:', not_primes)
